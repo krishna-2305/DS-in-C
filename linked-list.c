@@ -42,10 +42,10 @@ struct Node* Insert_at_Index(struct Node* head,int data,int index){
     ptr->data=data;
     return head;
 };
-struct Node Insert_After_node(struct Node* head,struct Node* current,int data){
+struct Node* Insert_After_node(struct Node* head,struct Node* current,int data){
 struct Node*newNode=(struct Node*)malloc(sizeof(struct Node));
-newNode->next=second->next;
-second->next=newNode;
+newNode->next=current->next;
+current->next=newNode;
 return head;
 };
 int main() {
@@ -71,7 +71,8 @@ int main() {
     head = Insert_at_Index(head, 10, 2);
     printf("After Insertion at Index 2\n");
     Traversal(head);
-    Insert_After_node(head,second,int 50);
-    Traversal(head):
+    printf("After Insertion after second node\n");
+    Insert_After_node(head,second,50);
+    Traversal(head);
 }
 
