@@ -42,6 +42,12 @@ struct Node* Insert_at_Index(struct Node* head,int data,int index){
     ptr->data=data;
     return head;
 };
+struct Node Insert_After_node(struct Node* head,struct Node* current,int data){
+struct Node*newNode=(struct Node*)malloc(sizeof(struct Node));
+newNode->next=second->next;
+second->next=newNode;
+return head;
+};
 int main() {
     struct Node* head;
     struct Node* first;
