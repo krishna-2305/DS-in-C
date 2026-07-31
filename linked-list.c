@@ -71,5 +71,7 @@ int main() {
     head = Insert_at_Index(head, 10, 2);
     printf("After Insertion at Index 2\n");
     Traversal(head);
+    Insert_After_node(head,second,int 50);
+    Traversal(head):
 }
 
