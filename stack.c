@@ -60,13 +60,30 @@ struct stack* display(struct stack* s){
     return s;
 }; 
 int main(){
-    struct stack* s=createStack(5);
-    s=push(s,1);
-    s=push(s,2);
-    s=push(s,3);
-    s=display(s);
-    printf("Top element is %d\n",peek(s));
-    s=pop(s);
-    s=display(s);
+    int a,b,cs;
+    printf("Enter the capacity of stack\n");
+    scanf("%d",&a);
+    struct stack* s=createStack(a);
+    for(int i=0;i<a;i++){
+        printf("Enter the element to be pushed\n");
+        scanf("%d",&b);
+        s=push(s,b);
+    }
+    printf("Enter your choice\n");
+    printf("1.Display\n2.Peek\n3.Pop\n");
+    scanf("%d",&cs);
+    switch (cs){
+        case 1:
+            s=display(s);
+            break;
+        case 2:
+            printf("Top element is %d\n",peek(s));
+            break;
+        case 3:
+            s=pop(s);
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
     return 0;
 } 
