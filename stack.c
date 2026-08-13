@@ -72,7 +72,6 @@ int main(){
     printf("Enter your choice\n");
     printf("1.Display\n2.Peek\n3.Pop\n");
     scanf("%d",&cs);
-    printf("Your choice is %d\n",cs);
     printf("\n");
     switch (cs){
         case 1:
