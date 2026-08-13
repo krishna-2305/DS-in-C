@@ -58,7 +58,7 @@ int main(){
     printf("Enter the number of elements to push: ");
     scanf("%d",&a);
     for(int i=0;i<a;i++){
-        printf("Enter element %d: ",i);
+        printf("Enter element %d: ",i+1);
         scanf("%d",&b);
         push(s,b);
     }
