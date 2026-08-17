@@ -62,6 +62,7 @@ int main(){
         scanf("%d",&b);
         push(s,b);
     }
+    printf("\n");
     printf("Elements in the stack are:\n");
     display(s);
     printf("Top element is: %d\n", peek(s));
