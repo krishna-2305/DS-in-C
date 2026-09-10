@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 void insertAtEnd(int arr[], int *n, int value)
 {
@@ -25,7 +25,7 @@ int main()
     display(arr, n);
 
     return 0;
-}
+}*/
 
 #include <stdio.h>
 
